@@ -1,0 +1,19 @@
+namespace Quality.Forms.Doctor
+{
+    partial class SurveyForm
+    {
+        private System.ComponentModel.IContainer components = null; private System.Windows.Forms.ComboBox cmbPatient; private System.Windows.Forms.DateTimePicker dtSurveyDate; private System.Windows.Forms.NumericUpDown numService; private System.Windows.Forms.NumericUpDown numAttention; private System.Windows.Forms.NumericUpDown numWaiting; private System.Windows.Forms.NumericUpDown numClean; private System.Windows.Forms.TextBox txtComment; private System.Windows.Forms.Button btnSend;
+        protected override void Dispose(bool disposing) { if (disposing && (components != null)) components.Dispose(); base.Dispose(disposing); }
+        private void InitializeComponent()
+        {
+            this.cmbPatient = new System.Windows.Forms.ComboBox(); this.dtSurveyDate = new System.Windows.Forms.DateTimePicker(); this.numService = new System.Windows.Forms.NumericUpDown(); this.numAttention = new System.Windows.Forms.NumericUpDown(); this.numWaiting = new System.Windows.Forms.NumericUpDown(); this.numClean = new System.Windows.Forms.NumericUpDown(); this.txtComment = new System.Windows.Forms.TextBox(); this.btnSend = new System.Windows.Forms.Button(); ((System.ComponentModel.ISupportInitialize)(this.numService)).BeginInit(); ((System.ComponentModel.ISupportInitialize)(this.numAttention)).BeginInit(); ((System.ComponentModel.ISupportInitialize)(this.numWaiting)).BeginInit(); ((System.ComponentModel.ISupportInitialize)(this.numClean)).BeginInit(); this.SuspendLayout();
+            this.cmbPatient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList; this.cmbPatient.Location = new System.Drawing.Point(24, 20); this.cmbPatient.Size = new System.Drawing.Size(340, 28);
+            this.dtSurveyDate.Location = new System.Drawing.Point(24, 58); this.dtSurveyDate.Size = new System.Drawing.Size(340, 27);
+            foreach (var ctrl in new System.Windows.Forms.NumericUpDown[] { this.numService, this.numAttention, this.numWaiting, this.numClean }) { ctrl.Minimum = 1; ctrl.Maximum = 5; ctrl.Value = 5; ctrl.Size = new System.Drawing.Size(340, 27); }
+            this.numService.Location = new System.Drawing.Point(24, 96); this.numAttention.Location = new System.Drawing.Point(24, 133); this.numWaiting.Location = new System.Drawing.Point(24, 170); this.numClean.Location = new System.Drawing.Point(24, 207);
+            this.txtComment.Location = new System.Drawing.Point(24, 245); this.txtComment.Multiline = true; this.txtComment.Size = new System.Drawing.Size(340, 92);
+            this.btnSend.BackColor = System.Drawing.Color.Gainsboro; this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat; this.btnSend.Location = new System.Drawing.Point(24, 349); this.btnSend.Size = new System.Drawing.Size(340, 36); this.btnSend.Text = "Отправить"; this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.ClientSize = new System.Drawing.Size(392, 405); this.Controls.Add(this.cmbPatient); this.Controls.Add(this.dtSurveyDate); this.Controls.Add(this.numService); this.Controls.Add(this.numAttention); this.Controls.Add(this.numWaiting); this.Controls.Add(this.numClean); this.Controls.Add(this.txtComment); this.Controls.Add(this.btnSend); this.Font = new System.Drawing.Font("Segoe UI", 10F); this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog; this.Name = "SurveyForm"; this.Text = "Оценка качества"; ((System.ComponentModel.ISupportInitialize)(this.numService)).EndInit(); ((System.ComponentModel.ISupportInitialize)(this.numAttention)).EndInit(); ((System.ComponentModel.ISupportInitialize)(this.numWaiting)).EndInit(); ((System.ComponentModel.ISupportInitialize)(this.numClean)).EndInit(); this.ResumeLayout(false); this.PerformLayout();
+        }
+    }
+}

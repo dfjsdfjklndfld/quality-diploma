@@ -1,0 +1,2 @@
+using System;
+namespace Quality.Models { public class CorrectiveAction { public int Id { get; set; } public string Title { get; set; } public DateTime Deadline { get; set; } public string Status { get; set; } } }
